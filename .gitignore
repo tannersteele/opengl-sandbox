@@ -54,3 +54,6 @@ ehthumbs.db
 
 # Clion specific files
 .idea/
+
+# Project specific (cleanup later)
+opengl-sandbox/x64
