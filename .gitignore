@@ -54,6 +54,3 @@ ehthumbs.db
 
 # Clion specific files
 .idea/
-
-# Custom out folder
-out/
