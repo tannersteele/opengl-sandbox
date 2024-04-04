@@ -3,19 +3,19 @@
 #include <assert.h>
 #include <chrono>
 
-constexpr int FLOAT_OPS = 256 / (sizeof(float) * 8); // 256-bit wide register / sizeof float in bits
+constexpr int INT_OPS = 256 / (sizeof(int) * 8); // 256-bit wide register / sizeof float in bits
 const int TEST_ARR_SIZE = 65536;
 
-void addVectorTest(const float*, const float*, float*);
-void addScalarTest(const float*, const float*, float*);
+void addVectorTest(const int*, const int*, int*);
+void addScalarTest(const int*, const int*, int*);
 
-void fillArrays(float*, float*);
+void fillArrays(int*, int*);
 
 int main()
 {
-	float a[TEST_ARR_SIZE];
-	float b[TEST_ARR_SIZE];
-	float result[TEST_ARR_SIZE];
+	int a[TEST_ARR_SIZE];
+	int b[TEST_ARR_SIZE];
+	int result[TEST_ARR_SIZE];
 
 	// Vector Add ------------------------
 	fillArrays(a, b);
@@ -36,7 +36,7 @@ int main()
 	return 0;
 }
 
-void fillArrays(float* arrA, float* arrB)
+void fillArrays(int* arrA, int* arrB)
 {
 	for (int i = 0; i < TEST_ARR_SIZE; ++i)
 	{
@@ -45,7 +45,7 @@ void fillArrays(float* arrA, float* arrB)
 	}
 }
 
-void addScalarTest(const float* a, const float* b, float* result)
+void addScalarTest(const int* a, const int* b, int* result)
 {
 	for (int i = 0; i < TEST_ARR_SIZE; i++) // scalar operation, add 1 pair at a time
 	{
@@ -53,13 +53,14 @@ void addScalarTest(const float* a, const float* b, float* result)
 	}
 }
 
-void addVectorTest(const float* a, const float* b, float* result)
+void addVectorTest(const int* a, const int* b, int* result)
 {
-	for (int i = 0; i < TEST_ARR_SIZE; i += FLOAT_OPS)
+	__m256i c, d;
+	for (int i = 0; i < TEST_ARR_SIZE; i += INT_OPS) // Improvement, do scalar addition if we don't have enough elements for vector in some other conditional
 	{
-		__m256 avx_a = _mm256_loadu_ps(&a[i]); // loadu will load 8*32-bit floats at a time
-		__m256 avx_b = _mm256_loadu_ps(&b[i]);
+		c = _mm256_loadu_si256((__m256i*) & a[i]); // loadu will load 8*32-bit floats at a time
+		d = _mm256_loadu_si256((__m256i*) & b[i]);
 
-		_mm256_storeu_ps(&result[i], _mm256_add_ps(avx_a, avx_b)); //SIMD add operation (8*32-bit floats simultaneously) + store in results arr
+		_mm256_storeu_si256((__m256i*) & result[i], _mm256_add_epi32(c, d)); //SIMD add operation (8*32-bit floats simultaneously) + store in results arr
 	}
 }

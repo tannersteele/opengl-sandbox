@@ -761,7 +761,7 @@
        Overriding target "ComputeMetaGenInputs" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MetaGen.targets" with target "ComputeMetaGenInputs" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
        Overriding target "GetNativeManifest" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.Cpp.DesignTime.targets".
-Build started 4/3/2024 8:46:38 PM.
+Build started 4/4/2024 5:57:55 PM.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\opengl-sandbox.vcxproj" on node 2 (Build target(s)).
      1>Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\opengl-sandbox.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -787,7 +787,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tanne\Documents\G
          VSTEL_SolutionSessionID={1623C685-8910-4B65-937D-F0F296FD068A}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=2635514130
+         VSTEL_CurrentSolutionBuildID=898324726
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={9e9a2bb0-154e-4261-9a52-a4f36fb11387}
@@ -1096,18 +1096,18 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tanne\Documents\G
          Outputs for C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\AVX2VECTORTEST.CPP|C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\MAIN.CPP:
          	C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\AVX2VECTORTEST.OBJ
          	C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\MAIN.OBJ
-         avx2vectortest.cpp will be compiled because C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\avx2vectortest.cpp was modified at 4/3/2024 8:46:37 PM.
+         avx2vectortest.cpp will be compiled because C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\avx2vectortest.cpp was modified at 4/4/2024 5:57:54 PM.
          Outputs for C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\AVX2VECTORTEST.CPP:
          	C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\AVX2VECTORTEST.OBJ
          Write Tracking Logs:
          	x64\Debug\opengl-sandbox.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1584
+           VS_UNICODE_OUTPUT=824
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt avx2vectortest.cpp
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\x64\Debug\opengl-sandbox.tlog /r C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\AVX2VECTORTEST.CPP /b MSBuildConsole_CancelEvent3185767c9c4448c9b5df840909c39474  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt avx2vectortest.cpp
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\x64\Debug\opengl-sandbox.tlog /r C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\AVX2VECTORTEST.CPP /b MSBuildConsole_CancelEvent98e2a00fa94d44659e41c67c18b97cbd  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe"  /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /permissive- /Fo"x64\Debug\\" /Fd"x64\Debug\vc143.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt avx2vectortest.cpp
          avx2vectortest.cpp
-     1>C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\avx2vectortest.cpp(14,2): warning C4002: too many arguments for function-like macro invocation 'assert'
+     1>C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\avx2vectortest.cpp(44,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
        Done executing task "CL".
      1>Done building target "ClCompile" in project "opengl-sandbox.vcxproj".
        Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
@@ -1256,12 +1256,12 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tanne\Documents\G
          	C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\VC143.PDB
          Source compilation required: input C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\AVX2VECTORTEST.OBJ is newer than output C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\X64\DEBUG\OPENGL-SANDBOX.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1692
+           VS_UNICODE_OUTPUT=1624
          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.exe" /INCREMENTAL /ILK:"x64\Debug\opengl-sandbox.ilk" /NOLOGO glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.lib" /MACHINE:X64 x64\Debug\glad.obj
          x64\Debug\avx2vectortest.obj
          x64\Debug\main.obj
          Tracking command:
-         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\x64\Debug\opengl-sandbox.tlog /r "C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\AVX2VECTORTEST.OBJ|C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\GLAD.OBJ|C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEvent4a1051f66335426dae9b98c678227761  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.exe" /INCREMENTAL /ILK:"x64\Debug\opengl-sandbox.ilk" /NOLOGO glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.lib" /MACHINE:X64 x64\Debug\glad.obj
+         C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\x64\Debug\opengl-sandbox.tlog /r "C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\AVX2VECTORTEST.OBJ|C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\GLAD.OBJ|C:\USERS\TANNE\DOCUMENTS\GITHUB\OPENGL-SANDBOX\OPENGL-SANDBOX\X64\DEBUG\MAIN.OBJ" /b MSBuildConsole_CancelEventa2bce21c11c74fd3ac221a328e9615e3  /c "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.exe" /INCREMENTAL /ILK:"x64\Debug\opengl-sandbox.ilk" /NOLOGO glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tanne\Documents\GitHub\opengl-sandbox\x64\Debug\opengl-sandbox.lib" /MACHINE:X64 x64\Debug\glad.obj
          x64\Debug\avx2vectortest.obj
          x64\Debug\main.obj
        Done executing task "Link".
@@ -1482,9 +1482,9 @@ Build succeeded.
 
        "C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\opengl-sandbox.vcxproj" (Build target) (1) ->
        (ClCompile target) -> 
-         C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\avx2vectortest.cpp(14,2): warning C4002: too many arguments for function-like macro invocation 'assert'
+         C:\Users\tanne\Documents\GitHub\opengl-sandbox\opengl-sandbox\avx2vectortest.cpp(44,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 
     1 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.92
+Time Elapsed 00:00:01.16
