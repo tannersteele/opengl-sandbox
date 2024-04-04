@@ -3,13 +3,13 @@
 #include <assert.h>
 #include <chrono>
 
-constexpr int INT_OPS = 256 / (sizeof(int) * 8); // 256-bit wide register / sizeof float in bits
-const int TEST_ARR_SIZE = 65536;
+constexpr uint32_t INT_OPS = 256 / (sizeof(int) * 8); // 256-bit wide register / sizeof float in bits
+const uint32_t TEST_ARR_SIZE = 65536;
 
-void addVectorTest(const int*, const int*, int*);
-void addScalarTest(const int*, const int*, int*);
+void addVectorTest(const int32_t*, const int32_t*, int32_t*);
+void addScalarTest(const int32_t*, const int32_t*, int32_t*);
 
-void fillArrays(int*, int*);
+void fillArrays(int32_t*, int32_t*);
 
 int main()
 {
@@ -36,7 +36,7 @@ int main()
 	return 0;
 }
 
-void fillArrays(int* arrA, int* arrB)
+void fillArrays(int32_t* arrA, int32_t* arrB)
 {
 	for (int i = 0; i < TEST_ARR_SIZE; ++i)
 	{
@@ -45,7 +45,7 @@ void fillArrays(int* arrA, int* arrB)
 	}
 }
 
-void addScalarTest(const int* a, const int* b, int* result)
+void addScalarTest(const int32_t* a, const int32_t* b, int32_t* result)
 {
 	for (int i = 0; i < TEST_ARR_SIZE; i++) // scalar operation, add 1 pair at a time
 	{
@@ -53,7 +53,7 @@ void addScalarTest(const int* a, const int* b, int* result)
 	}
 }
 
-void addVectorTest(const int* a, const int* b, int* result)
+void addVectorTest(const int32_t* a, const int32_t* b, int32_t* result)
 {
 	__m256i c, d;
 	for (int i = 0; i < TEST_ARR_SIZE; i += INT_OPS) // Improvement, do scalar addition if we don't have enough elements for vector in some other conditional
