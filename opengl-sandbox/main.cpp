@@ -19,7 +19,7 @@ void processInput(GLFWwindow* window)
 		glfwSetWindowShouldClose(window, true);
 }
 
-int main()
+int _main()
 {
 	glfwInit();
 
